@@ -41,7 +41,7 @@
 					<div class="box_summury_game">
 						<div class="sum_pic">
 							<span class="pic"><img
-								src="images/game/img_lotto520_screen.jpg" alt="연금복권520 스크린샷"></span>
+								src="${pageContext.request.contextPath }/resources/images/game/img_lotto520_screen.jpg" alt="연금복권520 스크린샷"></span>
 							<ul>
 								<li>소액으로 건전하게 즐기세요. (구입한도 1인 1회 10만원)</li>
 							</ul>

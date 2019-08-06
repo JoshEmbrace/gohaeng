@@ -133,7 +133,7 @@
 							<ul class="list_float_image">
 								<li>
 									<div class="pic">
-										<img src="images/game/img_520_process1.jpg" alt="추첨장비설치 사진">
+										<img src="${pageContext.request.contextPath }/resources/images/game/img_520_process1.jpg" alt="추첨장비설치 사진">
 									</div> <strong>01. 추첨장비 설치</strong>
 									<p>추첨장비 전용 창고에 보관되어 있던 추첨 장비를 생방송 2시간 전 스튜디오에 설치 합니다.</p>
 									<br> <strong>02. 추첨장비 테스트</strong>
@@ -141,13 +141,13 @@
 								</li>
 								<li>
 									<div class="pic">
-										<img src="images/game/img_520_process2.jpg" alt="리허설 사진">
+										<img src="${pageContext.request.contextPath }/resources/images/game/img_520_process2.jpg" alt="리허설 사진">
 									</div> <strong>03. 리허설</strong>
 									<p>추첨 생방송과 동일한 환경에서 모든 출연자가 참여하여 리허설을 실시합니다.</p>
 								</li>
 								<li>
 									<div class="pic">
-										<img src="images/game/img_520_process3.jpg"
+										<img src="${pageContext.request.contextPath }/resources/images/game/img_520_process3.jpg"
 											alt="추첨개시 및 추첨방송 사진">
 									</div> <strong>04. 추첨개시 및 추첨방송 실시</strong>
 									<p>동행복권 관계자, 경찰공무원, 참관인(일반 방청객)이 참여하는 가운데 방송사의 주관으로 연금복권520
@@ -155,7 +155,7 @@
 								</li>
 								<li>
 									<div class="pic">
-										<img src="images/game/img_520_process4.jpg" alt="당첨번호 공지 사진">
+										<img src="${pageContext.request.contextPath }/resources/images/game/img_520_process4.jpg" alt="당첨번호 공지 사진">
 									</div> <strong>05. 당첨번호 공지</strong>
 									<p>추첨방송 진행자가 추첨결과(당첨번호)를 추첨 중과 추첨 후 공지합니다.</p>
 								</li>

@@ -118,7 +118,7 @@
 									</div>
 									<div class="box_game_guide">
 										<div class="screen">
-											<img src="images/game/img_lotto520_guide1_1.jpg"
+											<img src="${pageContext.request.contextPath }/resources/images/game/img_lotto520_guide1_1.jpg"
 												alt="게임방법안내 스크린샷">
 										</div>
 										<ol class="guide_type1">
@@ -170,7 +170,7 @@
 									</div>
 									<div class="box_game_guide">
 										<div class="screen">
-											<img src="images/game/img_lotto520_guide2_1.jpg"
+											<img src="${pageContext.request.contextPath }/resources/images/game/img_lotto520_guide2_1.jpg"
 												alt="게임방법안내 스크린샷">
 										</div>
 										<ol class="guide_type1">
