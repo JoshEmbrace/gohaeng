@@ -377,7 +377,39 @@ h3.middle_title {margin-left:6px; color:#194382; font-size:15px; font-weight:bol
 .content_result_visitwrite .agreement .prgrp_common {margin-bottom:15px}
 .content_result_visitwrite .agreement .check {position:absolute; right:0; top:3px; width:180px}
 .content_result_visitwrite .agreement .btn_common.lrg {position:absolute; right:0; bottom:0; width:180px; padding:0}
-
+/* 로또 6/45 추첨방송 다시보기 */
+.content_cast_645 .box_visual_top .copy .inner {background-image:url(../images/result/bg_top_vod_645.png); background-position:100% 50%}
+/* 로또 6/45 회차별 당첨번호 */
+[class*="content_winnum_"] .win_result {border:1px solid #ddd; background:#fff; text-align:center; margin-bottom:40px; padding:60px 60px 90px;}
+[class*="content_winnum_"] .win_result h4 {font-size:28px; font-weight:300}
+[class*="content_winnum_"] .win_result h4 strong {font-weight:500; color:#d43301}
+[class*="content_winnum_"] .win_result .desc {margin-top:9px}
+.content_winnum_645 .win_result .nums {display:inline-block; margin-top:26px}
+.content_winnum_645 .win_result .nums:after {content:""; display:block; clear:both}
+.content_winnum_645 .win_result .nums .num {float:left; position:relative}
+.content_winnum_645 .win_result .nums .num ~ .num {margin-left:60px}
+.content_winnum_645 .win_result .nums .num > strong {position:absolute; left:0; bottom:-30px; right:0; font-size:16px; font-weight:normal; color:#555}
+.content_winnum_645 .win_result .nums .num p {padding:30px; border-radius:30px; background:#fafafa}
+.content_winnum_645 .win_result .nums .num p:after {content:""; display:block; clear:both}
+.content_winnum_645 .win_result .nums .num p span {float:left}
+.content_winnum_645 .win_result .nums .num p span ~ span {margin-left:20px}
+.content_winnum_645 .win_result .nums .num.bonus:before,
+.content_winnum_645 .win_result .nums .num.bonus:after {content:""; position:absolute; left:-30px; top:50%; background:#999}
+.content_winnum_645 .win_result .nums .num.bonus:before {width:20px; height:4px; margin:-2px 0 0 -10px}
+.content_winnum_645 .win_result .nums .num.bonus:after {width:4px; height:20px; margin:-10px 0 0 -2px}
+.content_winnum_645 .btns_function .right .unit {margin-left:10px; padding-right:15px}
+.content_winnum_645 .tbl_data strong {font-weight:300}
+.content_winnum_645 .tbl_data strong.length {font-weight:500; color:#777}
+.popup_print_winnum_645 .range {margin-bottom:17px; font-size:20px; font-weight:500; color:#1d1d1d}
+.popup_print_winnum_645 .range strong {font-weight:500; color:#f46d00}
+.popup_print_winnum_645 .note_result_search.bottom {margin-top:20px}
+/* 로또 6/45 > 내번호 당첨확인 */
+.content_my_645win .num_645 {text-align:center; padding:0; width:34px; margin:0 1px 0 0;}
+.content_my_645win .tbl_data tr td {text-align:center; letter-spacing:0}
+.content_my_645win .tbl_data tr td strong {display:inline-block; position:relative; font-weight:bold}
+.content_my_645win .tbl_data tr td strong:after {content:""; position:absolute; top:-5px; left:50%; margin-left:-1.5px; width:3px; height:3px; border-radius:100%; background:#d43301}
+.content_my_645win .my_numbers {padding:29px; margin-bottom:30px; border:1px solid #ddd; background:#fff; text-align:center}
+.content_my_645win .my_numbers .submit {margin-top:20px}
 
 /*03-02-01 연금복권520 > 회차별 당첨번호 */
 .content_winnum_520 .win_result .nums {display:inline-block; position:relative; padding:30px 90px 30px 270px; margin:0 auto; margin-top:27px; border-radius:30px; background:#fafafa}

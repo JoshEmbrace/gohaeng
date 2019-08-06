@@ -15,10 +15,10 @@
 							<ul class="lnb_dep2" style="display: block;">
 								<li id="02-01-01" class="active"><a href="#"><span>로또
 											6/45 소개</span></a></li>
-								<li id="02-01-02"><a href="#"><span>구매하기</span></a></li>
-								<li id="02-01-03"><a href="#"><span>구매방법</span></a></li>
-								<li id="02-01-04"><a href="#"><span>추첨안내</span></a></li>
-								<li id="02-01-05"><a href="#"><span>로또 히스토리</span></a></li>
+								<li id="02-01-02"><a href="${pageContext.request.contextPath }/gameinfo/lotto645/2.do"><span>구매하기</span></a></li>
+								<li id="02-01-03"><a href="${pageContext.request.contextPath }/gameinfo/lotto645/3.do"><span>구매방법</span></a></li>
+								<li id="02-01-04"><a href="${pageContext.request.contextPath }/gameinfo/lotto645/4.do"><span>추첨안내</span></a></li>
+								<li id="02-01-05"><a href="${pageContext.request.contextPath }/gameinfo/lotto645/5.do"><span>로또 히스토리</span></a></li>
 							</ul></li>
 						<li id="02-02"><a href="#" class="menuLnb"><span>연금복권520</span></a></li>
 					</ul>
