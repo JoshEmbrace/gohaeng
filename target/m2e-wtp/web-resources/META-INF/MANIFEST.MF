@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Built-By: searc
-Build-Jdk: 1.8.0_221
+Built-By: ￬ﾠﾕ￬ﾧﾀ￭ﾘﾜ
+Build-Jdk: 1.8.0_201-1-ojdkbuild
 Created-By: Maven Integration for Eclipse
 

@@ -28,7 +28,7 @@ public class HomeController {
 	public String home(Locale locale, Model model) {
 		
 		
-		return "happy.empathy.1";
+		return "admin.customer.faq.test";
 	}
 	
 }
