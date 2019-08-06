@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+
+
+// Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+}
+
+// Medium devices (tablets, 576px and up)
+@media (min-width: 576px) and (max-width: 959.98px) {
+
+}
+
+// Large devices (Desktops, 960px and up)
+@media (min-width: 1200px) { ... }
