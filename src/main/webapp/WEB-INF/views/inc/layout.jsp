@@ -12,6 +12,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>healthculturerule</title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/resources/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/resources/css/admin/common.css">
     <script type="text/javascript" src="${pageContext.request.contextPath }/resources/js/jquery-1.9.1.min.js"></script>
 </head>
 
