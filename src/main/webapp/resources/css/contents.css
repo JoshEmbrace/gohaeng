@@ -554,7 +554,7 @@ h3.middle_title {margin-left:6px; color:#194382; font-size:15px; font-weight:bol
 
 /* 판매점 */
 /* 04-01-01 ----------------------------------------------------- */
-.popup_find_location .popup_win_content {padding:20px}
+.popup_find_location .popup_win_content {padding:20pxl; width: 40%;}
 .popup_find_location .popup_win_content .tbl_data {margin-top:10px; border-top:1px solid #ddd}
 .popup_find_location .popup_win_content .tbl_data tr th,
 .popup_find_location .popup_win_content .tbl_data tr td {padding:6px 20px 8px}
