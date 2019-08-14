@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="addr">
+
+	<resultMap type="com.jscb.gohaeng.dto.AddrDto" id="AddrDto">
+		<result property="sido" column="SIDO" />
+		<result property="gu" column="GU" />
+	</resultMap>
+	
+	<select id="getList" parameterType="com.jscb.gohaeng.dto.AddrDto" resultMap="AddrDto">
+	 select * from address 
+	 <choose>
+		 <when test="sido != null and sido != ''">
+		 	where sido=#{sido}
+		 	<choose>
+		 		<when test="gu != null and gu != ''">
+		 			and gu=#{gu}
+		 		</when>
+		 	</choose>
+		 </when>
+	 </choose>
+
+	 order by gu
+	
+	</select>
+	
+	<select id="getSido" resultMap="AddrDto">
+		select distinct sido from address 
+	
+	</select>
+	<select id="getGu" parameterType="com.jscb.gohaeng.dto.AddrDto"  resultMap="AddrDto">
+	
+		select * from address where sido like '${sido}%' order by gu
+	</select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</mapper>
+

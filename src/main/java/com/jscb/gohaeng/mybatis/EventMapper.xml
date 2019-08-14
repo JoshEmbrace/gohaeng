@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="event">
+	<resultMap type="com.jscb.gohaeng.dto.EventDto" id="EventDto">
+		<result property="eventIndex" column="EVENT_INDEX" />
+		<result property="eventEnable" column="EVENT_ENABLE" />
+		<result property="eventTitle" column="EVENT_TITLE" />
+		<result property="eventSubtitle" column="EVENT_SUBTITLE" />
+		<result property="eventContent" column="EVENT_CONTENT" />
+		<result property="eventDrawDate" column="EVENT_DRAW_DATE" />
+		<result property="eventStartDate" column="EVENT_START_DATE" />
+		<result property="eventEndDate" column="EVENT_END_DATE" />
+		<result property="eventRegDate" column="EVENT_REG_DATE" />
+	</resultMap>
+
+	<select id="getList" resultMap="EventDto">
+		SELECT EVENT_INDEX, EVENT_TITLE,
+		EVENT_SUBTITLE,
+		EVENT_CONTENT, EVENT_DRAW_DATE, EVENT_START_DATE, EVENT_END_DATE, EVENT_REG_DATE
+		FROM EVENT ORDER BY EVENT_INDEX ASC
+
+	</select>
+
+	<select id="getData" parameterType="int"
+		resultMap="EventDto">
+		SELECT * FROM EVENT WHERE EVENT_INDEX = #{eventIndex}
+	</select>
+
+	<delete id="delete" parameterType="int">
+		DELETE FROM EVENT WHERE
+		EVENT_INDEX = #{eventIndex}
+	</delete>
+
+
+
+</mapper>

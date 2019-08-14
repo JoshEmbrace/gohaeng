@@ -17,16 +17,16 @@
 					<li><span class="pic"><img
 							src="/images/result/logo_itv_LP34.png" alt="스피또1000"></span>
 						<div class="summary">
-							<strong class="game">${list.WI_INDEX}</strong> 
-							<a href="1detail?WI_INDEX=${list.WI_INDEX}">${list.WI_TITLE}</a>
+							<strong class="game">${list.wiIndex}</strong> 
+							<a href="1detail?wiIndex=${list.wiIndex}">${list.wiTitle}</a>
 							<br>
-							<span class="date"><strong>작성일: </strong>${list.WI_REG_DATE}</span> <br>
+							<span class="date"><strong>작성일: </strong>${list.wiRegDate}</span> <br>
 							<p class="comment">
 								<strong>소감한마디 : </strong><span></span>
 							</p>
 						</div>
 						<div class="action">
-							<a class="btn_common mid" href="">${list.MEMBER_ID} 인터뷰 보기</a>
+							<a class="btn_common mid" href="">${list.memberId} 인터뷰 보기</a>
 						</div></li>
 
 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="drawshow">
+
+
+	<resultMap type="com.jscb.gohaeng.dto.DrawShowDto" id="DrawShowDto">
+		<result property="index" column="AD_INDEX" />
+		<result property="enable" column="AD_ENABLE" />
+		<result property="category" column="AD_CATEGORY" />
+		<result property="memberId" column="MEMBER_ID" />
+		<result property="drawDate" column="AD_DRAW_DATE" />
+		<result property="hp" column="AD_HP" />
+	</resultMap>
+	
+	
+	<select id="getList" parameterType="com.jscb.gohaeng.dto.DrawShowDto" resultMap="DrawShowDto">
+		SELECT * FROM APPLY_DRAWSHOW WHERE AD_CATEGORY = 0 AND AD_ENABLE=0 ORDER BY AD_INDEX
+	
+	</select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</mapper>

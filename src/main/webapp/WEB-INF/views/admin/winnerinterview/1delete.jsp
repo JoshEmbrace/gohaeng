@@ -6,5 +6,5 @@
  <script>
    alert("삭제되었습니다.");
    //javascript 를 이용해서 redirect 이동 시키기 
-   location.href="${pageContext.request.contextPath}/admin/winning_result/winner_interview/1.do";
+   location.href="${pageContext.request.contextPath}/admin/winner_interview/1.do";
 </script>

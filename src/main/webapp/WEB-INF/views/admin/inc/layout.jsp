@@ -16,7 +16,17 @@
 	href="${pageContext.request.contextPath}/resources/css/common.css" />
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/contents.css" />
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/resources/css/page.css" />
 <script type="text/javascript" src="${pageContext.request.contextPath }/resources/js/jquery-1.9.1.min.js"></script>
+<!-- 판매점 api -->
+
+<!-- services 라이브러리 불러오기 -->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a9998f6c6ca885b34262330aeccb175f&libraries=services"></script>
+
+<link rel="shortcut icon" href="/images/common/favicon.ico"
+	type="image/x-icon">
+<!-- 판매점 api 끝 -->
 <title>관리자페이지</title>
 </head>
 

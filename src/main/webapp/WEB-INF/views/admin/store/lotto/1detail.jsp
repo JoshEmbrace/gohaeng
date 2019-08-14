@@ -33,7 +33,7 @@
 		var geocoder = new kakao.maps.services.Geocoder();
 		
 		// 주소로 좌표를 검색합니다
-		geocoder.addressSearch('${dto.STORE_ADDR}', function(result, status) {
+		geocoder.addressSearch('${dto.storeAddr}', function(result, status) {
 
 		    // 정상적으로 검색이 완료됐으면 
 		     if (status === kakao.maps.services.Status.OK) {
@@ -48,7 +48,7 @@
 
 		        // 인포윈도우로 장소에 대한 설명을 표시합니다
 		        var infowindow = new kakao.maps.InfoWindow({
-		            content: '<div style="width:150px;text-align:center;padding:6px 0;">${dto.STORE_NAME}</div>'
+		            content: '<div style="width:150px;text-align:center;padding:6px 0;">${dto.storeName}</div>'
 		        });
 		        infowindow.open(map, marker);
 
@@ -76,15 +76,15 @@
 			<tbody>
 				<tr>
 					<th scope="row">판매점</th>
-					<td>${dto.STORE_NAME}</td>
+					<td>${dto.storeName}</td>
 				</tr>
 				<tr>
 					<th scope="row">전화번호</th>
-					<td>${dto.STORE_TEL}</td>
+					<td>${dto.storeTel}</td>
 				</tr>
 				<tr>
 					<th scope="row">소재지</th>
-					<td>${dto.STORE_ADDR}</td>
+					<td>${dto.storeAddr}</td>
 				</tr>
 				<tr>
 					<th scope="row">취급복권</th>
@@ -95,10 +95,10 @@
 			</tbody>
 		</table>
 		<div class="btn_common form write">
-			<a href="1editform.do?STORE_INDEX=${dto.STORE_INDEX}">수정</a>
+			<a href="1editform.do?storeIndex=${dto.storeIndex}">수정</a>
 		</div>
 		<div class="btn_common form delete">
-			<a href="1delete.do?STORE_INDEX=${dto.STORE_INDEX}">삭제</a>
+			<a href="1delete.do?storeIndex=${dto.storeIndex}">삭제</a>
 		</div>
 		<div class="btns_bottom">
 			<a href="#" class="btn_common mid"

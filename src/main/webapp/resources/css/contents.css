@@ -565,11 +565,13 @@ h3.middle_title {margin-left:6px; color:#194382; font-size:15px; font-weight:bol
 .content_store_win .tbl_search_opt tr td select {width:100px}
 .content_store_win .tbl_search_opt tr td input[type="text"] {width:200px}
 /* 판매점 조회 */
+.tbl_data .store_insert{display:block;}
 .content_seller_info .box_option {padding:28px 29px; border:1px solid #ddd; background:#fff}
 .content_seller_info .box_option h4 {margin-bottom:20px; font-size:20px; font-weight:500}
 .content_seller_info .box_option h4 strong {color:#007bc3; font-weight:500}
+.wrap_option wrap_option1{float: left;}
 .content_seller_info .wrap_option:after {content:""; display:block; clear:both}
-.content_seller_info .wrap_option1 {margin-bottom:20px}
+.content_seller_info .wrap_option1 {float: left; margin-bottom:20px}
 .content_seller_info .wrap_option1 .box_option {float:left; width:440px}
 .content_seller_info .wrap_option1 .box_option ~ .box_option {float:right}
 .content_seller_info .wrap_option1 .box_option .forms:after {content:""; display:block; clear:both}
@@ -590,7 +592,7 @@ h3.middle_title {margin-left:6px; color:#194382; font-size:15px; font-weight:bol
 .content_seller_info .note_result_search.bottom + .paginate_common {margin-top:-16px}
 .content_seller_info .tbl_data tr td.ta_left img {display:inline-block; margin-top:-2px; margin-left:3px}
 .content_seller_info .wrap_option2 {margin-bottom:40px}
-.content_seller_info .wrap_option2 .box_option {float:left; width:50%; height:220px; padding-bottom:0; margin:0 -1px 0 0}
+.content_seller_info .wrap_option2 .box_option {float:left; width:40%; height:220px; padding-bottom:0; margin:0 -1px 0 0}
 .content_seller_info .wrap_option2 .box_option ~ .box_option {float:right; width:calc(50% + 1px); margin:0 0 0 -1px}
 .content_seller_info .wrap_option2 .box_option .head {height:39px}
 .content_seller_info .wrap_option2 .box_option .head * {float:left}
@@ -602,11 +604,13 @@ h3.middle_title {margin-left:6px; color:#194382; font-size:15px; font-weight:bol
 .content_seller_info .wrap_option2 .box_option1 .area {margin:0 -5px}
 .content_seller_info .wrap_option2 .box_option1 .area span,
 .content_seller_info .wrap_option2 .box_option1 .area a {width:47px; margin:0 5px 10px 5px}
-.content_seller_info .wrap_option2 .box_option2 {padding-right:0}
+.content_seller_info .wrap_option2 .box_option2 {padding-right:0;}
 .content_seller_info .wrap_option2 .box_option2 .area {height:122px; overflow-x:hidden; overflow-x:auto}
 .content_seller_info .wrap_option2 .box_option2 .area span,
 .content_seller_info .wrap_option2 .box_option2 .area a {width:120px; margin:0 10px 10px 0}
 
+.box_option .box_option2{height: 132px; padding-left:10px; }
+.select_lotto_pension{margin: 15px; padding:0; display:flex; float:right; padding-right:10px;}
 
 /* 이벤트/혜택 */
 /* 이벤트 */

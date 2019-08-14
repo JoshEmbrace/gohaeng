@@ -11,8 +11,8 @@ public class HomeController {
 	@RequestMapping(value="/",method = RequestMethod.GET)
 	public ModelAndView home(ModelAndView mView) {
 		
-		mView.setViewName("common.indexa");
-		
+		/* mView.setViewName("common.indexa"); */
+		 mView.setViewName("admin.drawshow.lotto.list");
 		return mView;
 	}
 }

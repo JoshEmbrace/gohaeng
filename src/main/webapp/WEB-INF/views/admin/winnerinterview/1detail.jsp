@@ -14,19 +14,19 @@
 	<thead>
 		<tr>
 			<th scope="row">제목:</th>
-			<td colspan="3" class="subject">소제목은 아직: ${dto.WI_TITLE}</td>
+			<td colspan="3" class="subject">소제목은 아직: ${dto.wiTitle}</td>
 		</tr>
 		<tr>
 			<th scope="row">당첨일:</th>
-			<td>${dto.WI_DRAW_DATE }</td>
+			<td>${dto.wiDrawDate}</td>
 			<th scope="row">조회수:</th>
-			<td>${dto.WI_HIT}</td>
+			<td>${dto.wiHit}</td>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td colspan="4" class="content">
-				${dto.WI_CONTENT}
+				${dto.wiContent}
 			</td>
 		</tr>
 		<tr class="prev_next">
@@ -41,7 +41,7 @@
 		</tr>
 	</tbody>
 </table>
-<div class="btn_common form write"><a href="1edit.do?WI_INDEX=${dto.WI_INDEX}">수정</a></div>
-<div class="btn_common form delete"><a href="1delete.do?WI_INDEX=${dto.WI_INDEX}">삭제</a></div>
+<div class="btn_common form write"><a href="1edit.do?wiIndex=${dto.wiIndex}">수정</a></div>
+<div class="btn_common form delete"><a href="1delete.do?wiIndex=${dto.wiIndex}">삭제</a></div>
 <div class="btn_common form list"><a href="1.do">목록</a></div>
 </main>

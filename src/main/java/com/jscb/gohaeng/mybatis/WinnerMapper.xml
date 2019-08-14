@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="winner">
+	<resultMap type="com.jscb.gohaeng.dto.WinnerDto" id="WinnerDto">
+		<result property="wiIndex" column="WI_INDEX" />
+		<result property="wiHit" column="WI_HIT" />
+		<result property="wiCategory" column="WI_CATEGORY" />
+		<result property="memberId" column="MEMBER_ID" />
+		<result property="wiTitle" column="WI_TITLE" />
+		<result property="wiContent" column="WI_CONTENT" />
+		<result property="wiDrawDate" column="WI_DRAW_DATE" />
+		<result property="wiRegDate" column="WI_REG_DATE" />
+	</resultMap>
+
+	<select id="getList" resultMap="WinnerDto">
+		SELECT WI_INDEX,WI_TITLE,
+		WI_REG_DATE, WI_CONTENT,
+		MEMBER_ID FROM WINNER_INTERVIEW ORDER BY
+		WI_INDEX ASC
+	</select>
+
+	<select id="getData" parameterType="int"
+		resultMap="WinnerDto">
+		SELECT MEMBER_ID,WI_INDEX, WI_DRAW_DATE, WI_HIT, WI_TITLE,
+		WI_REG_DATE, WI_CONTENT
+		FROM WINNER_INTERVIEW WHERE WI_INDEX =
+		#{wiIndex}
+	</select>
+
+	<delete id="delete" parameterType="int">
+		DELETE FROM WINNER_INTERVIEW WHERE WI_INDEX = #{wiIndex}
+		<!-- INT, STINRG으로 전달된 것이 하나면 #{NUM}말고 #{BABO}처럼다른 이름을 사용해도 된다. -->
+	</delete>
+
+</mapper>

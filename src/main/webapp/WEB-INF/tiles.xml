@@ -4,14 +4,6 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
 
-
-
-	<!-- <definition name="admin.*.*" template="/WEB-INF/views/admin/inc/layout.jsp"> 
-		<put-attribute name="header" value="/WEB-INF/views/admin/inc/header.jsp" 
-		/> <put-attribute name="aside" value="/WEB-INF/views/admin/inc/aside.jsp" 
-		/> <put-attribute name="main" value="/WEB-INF/views/admin/{1}/{2}.jsp" /> 
-		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" /> </definition> -->
-
 	<definition name="admin.*.*.*"
 		template="/WEB-INF/views/admin/inc/layout.jsp">
 		<put-attribute name="header"
@@ -20,21 +12,23 @@
 			value="/WEB-INF/views/admin/inc/aside.jsp" />
 		<put-attribute name="main"
 			value="/WEB-INF/views/admin/{1}/{2}/{3}.jsp" />
-		<!-- <put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" 
-			/> -->
-	</definition>
-
-	<definition name="common.*"
-		template="/WEB-INF/views/inc/layout.jsp">
-		<put-attribute name="header"
-			value="/WEB-INF/views/inc/header.jsp" />
-		<put-attribute name="quick"
-			value="/WEB-INF/views/inc/quick.jsp" />
-		<put-attribute name="main"
-			value="/WEB-INF/views/{1}.jsp" />
 		<put-attribute name="footer"
 			value="/WEB-INF/views/inc/footer.jsp" />
-		</definition>
+	</definition>
+
+	<definition name="admin.*.*"
+		template="/WEB-INF/views/admin/inc/layout.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/views/admin/inc/header.jsp" />
+		<put-attribute name="aside"
+			value="/WEB-INF/views/admin/inc/aside.jsp" />
+		<put-attribute name="main"
+			value="/WEB-INF/views/admin/{1}/{2}.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/inc/footer.jsp" />
+	</definition>
+
+
 
 	<definition name="*.*.*"
 		template="/WEB-INF/views/inc/layout.jsp">
@@ -49,20 +43,23 @@
 	</definition>
 
 	<!-- 타일즈 미적용 부분 -->
-<!-- setview(admin/hhg/hgg) -->
+
 	<definition name="admin.store.lotto.1detail"
 		template="/WEB-INF/views/admin/inc/no-tiles.jsp">
-		<put-attribute name="main" value="/WEB-INF/views/admin/store/lotto/1detail.jsp"></put-attribute>
+		<put-attribute name="main"
+			value="/WEB-INF/views/admin/store/lotto/1detail.jsp"></put-attribute>
 	</definition>
-	
+
 	<definition name="admin.store.lotto.1insertform"
 		template="/WEB-INF/views/admin/inc/no-tiles.jsp">
-		<put-attribute name="main" value="/WEB-INF/views/admin/store/lotto/1insertform.jsp"></put-attribute>
+		<put-attribute name="main"
+			value="/WEB-INF/views/admin/store/lotto/1insertform.jsp"></put-attribute>
 	</definition>
-	
+
 	<definition name="admin.store.lotto.1editform"
 		template="/WEB-INF/views/admin/inc/no-tiles.jsp">
-		<put-attribute name="main" value="/WEB-INF/views/admin/store/lotto/1editform.jsp"></put-attribute>
+		<put-attribute name="main"
+			value="/WEB-INF/views/admin/store/lotto/1editform.jsp"></put-attribute>
 	</definition>
 
 

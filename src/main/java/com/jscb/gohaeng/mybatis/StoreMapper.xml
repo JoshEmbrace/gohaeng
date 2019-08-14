@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="store">
+
+	<resultMap type="com.jscb.gohaeng.dto.StoreDto" id="StoreDto">
+		<result property="storeIndex" column="STORE_INDEX" />
+		<result property="storeAbleGames" column="STORE_ABLE_GAMES" />
+		<result property="storeEnable" column="STORE_ENABLE" />
+		<result property="storeName" column="STORE_NAME" />
+		<result property="storeTel" column="STORE_TEL" />
+		<result property="storeAddr" column="STORE_ADDR" />
+	</resultMap>
+	
+	<select id="list" parameterType="int" resultMap="StoreDto">
+	 SELECT * FROM STORE WHERE STORE_ABLE_GAMES = #{storeAbleGames}
+	</select>
+
+	<select id="getCount"
+		parameterType="com.jscb.gohaeng.dto.StoreDto" resultType="int">
+
+		SELECT NVL(MAX(ROWNUM), 0) FROM STORE
+
+	</select>
+
+	<select id="getList" resultMap="StoreDto"
+		parameterType="com.jscb.gohaeng.dto.StoreDto">
+		<!-- SELECT * FROM STORE ORDER BY STORE_INDEX ASC -->
+
+		SELECT * 
+		FROM
+			(SELECT result1.*, ROWNUM AS rnum
+			FROM
+				(SELECT * FROM STORE
+				<choose>
+					<when test="radio_select != null and radio_select == 'close'">
+						WHERE STORE_ENABLE = 0
+					</when>
+					<when test="radio_select != null and radio_select == 'open'">
+						WHERE STORE_ENABLE = 1
+					</when>
+					<!-- <otherwise>
+						<choose>
+							(1.lotto 2.pension 3.all
+							<when
+								test="storeAbleGames != null and storeAbleGames == 3">
+								WHERE STORE_ABLE_GAMES = 3
+							</when>
+							<when
+								test="storeAbleGames != null and storeAbleGames == 1">
+								WHERE STORE_ABLE_GAMES = 1
+							</when>
+							<when
+								test="storeAbleGames != null and storeAbleGames == 2">
+								WHERE STORE_ABLE_GAMES = 2
+							</when>
+						</choose>
+					</otherwise> -->
+				</choose>
+
+		ORDER BY STORE_INDEX DESC) result1)
+		WHERE rnum BETWEEN #{startRowNum}
+		AND #{endRowNum}
+	</select>
+
+	<select id="getData" parameterType="int" resultMap="StoreDto">
+		SELECT * FROM
+		STORE WHERE STORE_INDEX = #{storeIndex}
+
+	</select>
+
+	<delete id="delete" parameterType="int">
+		DELETE FROM STORE WHERE
+		STORE_INDEX = #{storeIndex}
+	</delete>
+
+	<insert id="insert"
+		parameterType="com.jscb.gohaeng.dto.StoreDto">
+		INSERT INTO STORE(STORE_INDEX, STORE_NAME, STORE_TEL, STORE_ADDR,
+		STORE_ABLE_GAMES, STORE_ENABLE)
+		VALUES(MAP_SEQ.NEXTVAL, #{storeName},
+		#{storeTel}, #{storeAddr}, #{storeAbleGames}, 1)
+		<!-- parameterType으로 FriendDto의 정보를 전달해주면 #안에 들어간다. 필드명을 그대로 적어주면된다 -->
+	</insert>
+
+	<update id="update"
+		parameterType="com.jscb.gohaeng.dto.StoreDto">
+		UPDATE STORE
+		SET STORE_NAME=#{storeName},
+		STORE_TEL=#{storeTel},
+		STORE_ADDR=#{storeAddr},
+		STORE_ENABLE=#{storeEnable}
+		WHERE
+		STORE_INDEX=#{storeIndex}
+
+	</update>
+
+
+</mapper>

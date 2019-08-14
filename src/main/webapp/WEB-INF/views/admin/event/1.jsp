@@ -13,6 +13,7 @@
 				name="kind" value=""> <input type="hidden" name="keyword"
 				value="">
 		</form>
+		
 		<div class="search_data">
 			<div class="inner">
 				<form id="searchfrm" name="searchfrm" method="post">
@@ -29,7 +30,7 @@
 
 				<c:forEach var="list" items="${list}">
 					<li><a class="pic"
-						href="1detail?EVENT_INDEX=${list.EVENT_INDEX}">
+						href="1detail?eventIndex=${list.eventIndex}">
 							<img src="/img/event/2_1564471100886.jpg"
 							alt="가상계좌 입금수수료 보상 이벤트 썸네일">
 					</a>
@@ -39,17 +40,17 @@
 						<div class="top">
 							<p class="subject">
 								<span class="label ing"> 진행중 </span> 
-								<p>이것은 인덱스 : ${list.EVENT_INDEX}</p><br>
-								<a href="1detail?EVENT_INDEX=${list.EVENT_INDEX}">
-									 ${list.EVENT_TITLE}</a>
+								<p>이것은 인덱스 : ${list.eventIndex}</p><br>
+								<a href="1detail?eventIndex=${list.eventIndex}">
+									 ${list.eventTitle}</a>
 
 							</p>
 							<p class="summary"></p>
 						</div>
 						<div class="bottom">
 							<p class="information">
-								<strong>이벤트 기간 : </strong><span>${list.EVENT_START_DATE} ~ ${list.EVENT_END_DATE}</span><br>
-								<strong>당첨자 발표일 : </strong><span> ${list.EVENT_DRAW_DATE}</span>
+								<strong>이벤트 기간 : </strong><span>${list.eventStartDate} ~ ${list.eventEndDate}</span><br>
+								<strong>당첨자 발표일 : </strong><span> ${list.eventDrawDate}</span>
 							</p>
 
 						</div></li>
