@@ -12,35 +12,46 @@
       <div class="snbArea">
          <ul id="snb">
             <li class="depth1 expandable "><a id="QA_Lnb_Menu2486"
-               href="#" menuno="2486" treeno="2703" class="product"> 공지사항
+               href="#none" menuno="2486" treeno="2703" class="product"> 공지사항
             </a></li>
             <li class="depth1 expandable collapsable "><a
-               id="QA_Lnb_Menu2487" href="#" menuno="2487" treeno="2707"
+               id="QA_Lnb_Menu2487" href="#none" menuno="2487" treeno="2707"
                class="member"> 고객센터 </a>
                <ul>
                   <li class=""><a id="QA_Lnb_Menu74"
-                     href="#" menuno="74"
+                     href="/admin/php/shop1/s_new/order_list.php" menuno="74"
                      treeno="2708" class=""> 1:1상담 </a></li>
                   <li class=""><a id="QA_Lnb_Menu71"
-                     href="#" menuno="71"
+                     href="/admin/php/shop1/s/payment_list.php" menuno="71"
                      treeno="2709" class=""> 자주묻는질문 </a></li>
                </ul></li>
             <li class=""><a id="QA_Lnb_Menu2488"
-               href="#" menuno="2488"
+               href="/admin/php/shop1/c/member_admin_l.php" menuno="2488"
                treeno="2711" class="member"> 담청자인터뷰 </a></li>
             <li class="depth1 expandable "><a id="QA_Lnb_Menu2489"
-               href="#" menuno="2489" treeno="2712" class="board"> 판매점 </a>
+               href="#none" menuno="2489" treeno="2712" class="board"> 판매점 </a>
                <ul>
                   <li class=""><a id="QA_Lnb_Menu106"
-                     href="#" menuno="106"
+                     href="/admin/php/shop1/b/board_admin_l.php" menuno="106"
                      treeno="2713" class=""> 로또 </a></li>
                   <li class=""><a id="QA_Lnb_Menu390"
-                     href="#" menuno="390"
+                     href="/admin/php/shop1/b/board_admin_bulletin_l.php" menuno="390"
                      treeno="2714" class=""> 연금 </a></li>
                </ul></li>
                 <li class=""><a id="QA_Lnb_Menu2488"
-               href="#" menuno="2488"
-               treeno="2711" class="member"> 이벤트 </a></li>
+               href="/admin/php/shop1/c/member_admin_l.php" menuno="2488"
+               treeno="2711" class="member"> 이벤트 </a>
+               <ul>
+               <li class=""><a id="QA_Lnb_Menu106"
+                     href="/admin/php/shop1/b/board_admin_l.php" menuno="106"
+                     treeno="2713" class=""> 이벤트 </a></li>
+                  <li class=""><a id="QA_Lnb_Menu390"
+                     href="/admin/php/shop1/b/board_admin_bulletin_l.php" menuno="390"
+                     treeno="2714" class=""> 고객관리 </a></li>
+               </ul></li>
+                <li class="depth1 expandable "><a id="QA_Lnb_Menu2486"
+               href="#none" menuno="2486" treeno="2703" class="product"> 참관신청
+            </a></li>
          </ul>
   
          <div class="ftp ">
